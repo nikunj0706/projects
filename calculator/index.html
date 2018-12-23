@@ -1,0 +1,45 @@
+<html>
+<head>
+    <link rel="stylesheet" href="calculator.css">
+    <script src="calc.js"></script>
+</head>
+  <body>
+ 
+    <div class="calculator">
+
+        <input type="text" class="calculator-screen" id="txtInput" readonly />
+        
+        <div class="calculator-keys">
+          
+          <button type="button" class="operator" value="+" onclick="calculate.DisplayInput(value,true)" >+</button>
+          <button type="button" class="operator" value="-" onclick="calculate.DisplayInput(value,true)">-</button>
+          <button type="button" class="operator" value="*" onclick="calculate.DisplayInput(value,true)">*</button>
+          <button type="button" class="operator" value="/" onclick="calculate.DisplayInput(value,true)">/</button>
+      
+          <button type="button" value="7" onclick="calculate.DisplayInput(value,false)">7</button>
+          <button type="button" value="8" onclick="calculate.DisplayInput(value,false)">8</button>
+          <button type="button" value="9" onclick="calculate.DisplayInput(value,false)">9</button>
+          <button type="button" onclick="calculate.TrimString()"><<</button>
+      
+      
+          <button type="button" value="4" onclick="calculate.DisplayInput(value,false)">4</button>
+          <button type="button" value="5" onclick="calculate.DisplayInput(value,false)">5</button>
+          <button type="button" value="6" onclick="calculate.DisplayInput(value,false)">6</button>
+      
+      
+          <button type="button" value="1" onclick="calculate.DisplayInput(value,false)">1</button>
+          <button type="button" value="2" onclick="calculate.DisplayInput(value,false)">2</button>
+          <button type="button" value="3" onclick="calculate.DisplayInput(value,false)">3</button>
+      
+      
+          <button type="button" value="0" onclick="calculate.DisplayInput(value,false)">0</button>
+          <button type="button" class="decimal" value="." onclick="calculate.DisplayInput(value,false)">.</button>
+          <button type="button" class="all-clear" value="all-clear" onclick="calculate.ClearTextBox()" >AC</button>
+      
+          <button type="button" class="equal-sign" value="=" onclick="calculate.Evalualte()" >=</button>
+      
+        </div>
+      </div>
+   
+  </body>
+</html>
