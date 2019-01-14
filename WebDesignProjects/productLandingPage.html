@@ -1,0 +1,106 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
+  </head>
+  <style>
+    body {
+      background-color: lightgrey;
+    }
+    img {
+      position: relative;
+      bottom: 40px;
+      left: 20px;
+      width: 350px;
+    }
+    ul {
+      margin-top: 20px;
+      text-align: right;
+    }
+    li {
+      text-decoration: none;
+      display: inline-block;
+    }
+    a {
+      color: black;
+      text-decoration: none;
+      font-size: 20px;
+      margin-right: 50px;
+      padding-bottom: 40px;
+    }
+
+    #email {
+      width: 250px;
+      height: 25px;
+      padding-left: 5px;
+    }
+    #submit {
+      border: none;
+      background-color: orange;
+      font-size: 20px;
+      width: 150px;
+      height: 25px;
+      margin-top: 20px;
+    }
+    #submit:hover {
+      background-color: lightsalmon;
+      cursor: pointer;
+    }
+    .form {
+      text-align: center;
+    }
+    .icons {
+      color: darkorange;
+   
+    }
+    #features{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    
+    }
+    .featuresAll{
+       
+    }
+  </style>
+
+  <body>
+    <header id="header">
+      <nav id="nav-bar">
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#howItWoks">How It Works</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+        </ul>
+        <img id="header-img" src="original_trombones.png" />
+      </nav>
+
+      <form>
+        <div class="form"><h2>Handcrafted, home-made masterpieces</h2></div>
+        <div class="form">
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email address here"
+          />
+        </div>
+        <div class="form">
+          <input type="submit" id="submit" value="Get Started" />
+        </div>
+      </form>
+    </header>
+
+    <div id="features">
+      <div class="icons"><i class="fa fa-3x fa-fire"></i></div>
+      <div class="featuresAll">
+        <h2>Premium Materials</h2>
+        <p>
+          Our trombones use the shiniest brass which is sourced locally. This
+          will increase the longevity of your purchase.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
