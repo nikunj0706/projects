@@ -45,7 +45,7 @@
       margin-top: 20px;
     }
     #submit:hover {
-      background-color: lightsalmon;
+      background-color: darkorange;
       cursor: pointer;
     }
     .form {
@@ -53,16 +53,26 @@
     }
     .icons {
       color: darkorange;
-   
+      margin-left: 100px;
     }
-    #features{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    
+    #features {
+      display: grid;
+      grid-template-columns: 100px auto;
+      grid-column-gap: 100px;
+      grid-row-gap: 50px;
+      margin-left: 100px;
+      margin-top: 100px;
     }
-    .featuresAll{
-       
+
+    h2 {
+	padding:0px;
+	margin:0px;
+	}
+p {
+	padding:0px;
+	margin-top:0px;
+	}
+    .featuresAll {
     }
   </style>
 
@@ -101,6 +111,32 @@
           will increase the longevity of your purchase.
         </p>
       </div>
+
+      <div class="icons"><i class="fa fa-3x fa-truck"></i></div>
+      <div class="featuresAll">
+        <h2>Fast Shipping</h2>
+        <p>
+          We make sure you recieve your trombone as soon as we have finished
+          making it. We also provide free returns if you are not satisfied.
+        </p>
+      </div>
+
+      <div class="icons"><i class="fa fa-3x fa-battery-full"></i></div>
+      <div class="featuresAll">
+        <h2>Quality Assurance</h2>
+        <p>
+          For every purchase you make, we will ensure there are no damages or
+          faults and we will check and test the pitch of your instrument.
+        </p>
+      </div>
+
+    </div>
+
+    <div id="howItWoks">
+            <iframe width="420" height="345" src="https://youtu.be/embed/tgbNymZ7vqY">
+            </iframe>
+            
+
     </div>
   </body>
 </html>
