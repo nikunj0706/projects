@@ -1,14 +1,32 @@
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
     />
   </head>
   <style>
+    h1 {
+      text-align: center;
+    }
     body {
       background-color: lightgrey;
+      padding: 0;
+      margin: 0;
     }
+    nav {
+    }
+    #nav-bar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: lightgray;
+    }
+    .centerAlign {
+      text-align: center;
+    }
+
     img {
       position: relative;
       bottom: 40px;
@@ -16,7 +34,6 @@
       width: 350px;
     }
     ul {
-      margin-top: 20px;
       text-align: right;
     }
     li {
@@ -28,7 +45,6 @@
       text-decoration: none;
       font-size: 20px;
       margin-right: 50px;
-      padding-bottom: 40px;
     }
 
     #email {
@@ -51,6 +67,9 @@
     .form {
       text-align: center;
     }
+    #formPosiion {
+      padding-top: 90px;
+    }
     .icons {
       color: darkorange;
       margin-left: 100px;
@@ -64,16 +83,78 @@
       margin-top: 100px;
     }
 
-    h2 {
-	padding:0px;
-	margin:0px;
-	}
-p {
-	padding:0px;
-	margin-top:0px;
-	}
-    .featuresAll {
+    #features h2 {
+      padding: 0px;
+      margin: 0px;
     }
+    #features p {
+      padding: 0px;
+      margin-top: 0px;
+    }
+
+    #howItWoks {
+      margin-top: 50px;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .trombone {
+      width: 300px;
+      height: auto;
+      border: 1px solid black;
+      border-radius: 5px;
+    }
+
+    #pricing {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    .pricingHeaders {
+      font-size: 18px;
+      text-align: center;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      background-color: darkgray;
+      margin-top: 0px;
+    }
+    .itemdesc p {
+      text-align: center;
+      font-size: 25x;
+    }
+    .pricingSelect {
+      border: none;
+      background-color: orange;
+      width: 100px;
+      height: 40px;
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+    .pricingSelect:hover {
+      background-color: darkorange;
+      cursor: pointer;
+    }
+
+    footer {
+      width: 90vw;
+
+      margin-left: auto;
+      margin-right: auto;
+      background-color: darkgray;
+      padding-right: 30px;
+      padding-bottom: 5px;
+      padding-top: 5px;
+      margin-top: 40px;
+    }
+    footer p {
+      padding: 0px;
+      margin-top: 0px;
+      text-align: right;
+    }
+    footer a {
+      margin-right: 0px;
+      margin-left: 20px;
+    }
+ 
   </style>
 
   <body>
@@ -87,7 +168,7 @@ p {
         <img id="header-img" src="original_trombones.png" />
       </nav>
 
-      <form>
+      <form id="formPosiion">
         <div class="form"><h2>Handcrafted, home-made masterpieces</h2></div>
         <div class="form">
           <input
@@ -129,14 +210,70 @@ p {
           faults and we will check and test the pitch of your instrument.
         </p>
       </div>
-
     </div>
 
     <div id="howItWoks">
-            <iframe width="420" height="345" src="https://youtu.be/embed/tgbNymZ7vqY">
-            </iframe>
-            
-
+      <iframe
+        id="video"
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/y8Yv4pnO7qc?controls=0&amp;rel=0"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
     </div>
+
+    <div id="pricing">
+      <div class="trombone" id="tenor">
+        <p class="pricingHeaders"><strong> TENOR TROMBONE</strong></p>
+        <h1>$600</h1>
+        <div class="itemdesc">
+          <p>Lorem ipsum.</p>
+          <p>Lorem ipsum.</p>
+          <p>Lorem ipsum dolor.</p>
+          <p>Lorem ipsum.</p>
+        </div>
+        <div class="centerAlign">
+          <input type="button" value="SELECT" class="pricingSelect" />
+        </div>
+      </div>
+      <div class="trombone" id="bass">
+        <p class="pricingHeaders"><strong> BASS TROMBONE</strong></p>
+        <h1>$900</h1>
+        <div class="itemdesc">
+          <p>Lorem ipsum.</p>
+          <p>Lorem ipsum.</p>
+          <p>Lorem ipsum dolor.</p>
+          <p>Lorem ipsum.</p>
+        </div>
+        <div class="centerAlign">
+          <input type="button" value="SELECT" class="pricingSelect" />
+        </div>
+      </div>
+      <div class="trombone" id="valve">
+        <p class="pricingHeaders"><strong> VALVE TROMBONE</strong></p>
+        <h1>$1200</h1>
+        <div class="itemdesc">
+          <p>Lorem ipsum.</p>
+          <p>Lorem ipsum.</p>
+          <p>Lorem ipsum dolor.</p>
+          <p>Lorem ipsum.</p>
+        </div>
+        <div class="centerAlign">
+          <input type="button" value="SELECT" class="pricingSelect" />
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div>
+        <ul>
+          <li><a href="">Privacy</a></li>
+          <li><a href="">Terms</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+        <p>Copyright 2016, Original Trombones</p>
+      </div>
+    </footer>
   </body>
 </html>
