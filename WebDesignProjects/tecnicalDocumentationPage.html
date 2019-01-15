@@ -1,0 +1,66 @@
+<html>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
+    #container {
+      display: flex;
+      flex-direction: row;
+    }
+    #sidebar {
+      position: fixed;
+      top: 0;
+      width: 300px;
+      height: 100%;
+      border-right: 5px solid lightgray;
+    }
+    #sidebar li{
+        display: block;
+        margin-top: 10px;
+        
+       
+       
+    }
+    #sidebar ul{
+        text-align: left;
+        
+    }
+    #sidebar a{
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+    
+    }
+    #sidebar a:hover{
+        cursor: pointer;
+    }
+    #documentation {
+      width: auto;
+      height: 100%;
+    }
+  </style>
+
+  <body>
+    <div id="container">
+      <div id="sidebar">
+        <ul>
+          <li><a href="">Introduction</a></li>
+
+          <li><a href="">What you should already know</a></li>
+
+          <li><a href="">Javascript and Java</a></li>
+
+          <li><a href="">Hello World </a></li>
+
+          <li><a href="">Variables</a></li>
+
+          <li><a href="">Declaring Variables</a></li>
+
+          <li><a href="">Variable Scope</a></li>
+        </ul>
+      </div>
+      <div id="documentation"></div>
+    </div>
+  </body>
+</html>

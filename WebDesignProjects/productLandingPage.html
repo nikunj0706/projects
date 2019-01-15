@@ -15,8 +15,7 @@
       padding: 0;
       margin: 0;
     }
-    nav {
-    }
+    
     #nav-bar {
       position: fixed;
       top: 0;
@@ -108,7 +107,17 @@
       display: flex;
       flex-direction: row;
       justify-content: space-around;
+
+   
     }
+    @media screen and (max-width:950px) {
+      #pricing{
+        flex-direction:column;
+        align-items: center;
+        
+      }
+        
+      }
     .pricingHeaders {
       font-size: 18px;
       text-align: center;
@@ -158,6 +167,13 @@
       padding: 0px;
       margin-bottom: 5px;
     }
+    @media screen and (max-width:550px) {
+      footer{
+        width: 100vw;
+        margin-left: 0px;
+        margin-right: 0px;
+        
+      }
  
   </style>
 
